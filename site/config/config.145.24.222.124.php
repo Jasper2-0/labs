@@ -2,7 +2,7 @@
 return [
     'debug' => false,
     'panel'=> [
-	'install' => false
+	    'install' => false
 	]
  
 ];
