@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php snippet('page-header') ?>
+<?php snippet('base/page-header') ?>
 <body class="bg-light">
-<?php snippet('nav-bar') ?>
-<?php snippet('subnav', array('items'=> $page->children()->visible())) ?>
+<?php snippet('navigation/navbar') ?>
+<?php snippet('navigation/subnav', array('items'=> $page->children()->visible())) ?>
 <main class="container" role="main">
   <div class="my-3 p-3 bg-white rounded shadow-sm">
     <h1><?php echo $page->title()->html() ?></h1>
@@ -11,7 +11,7 @@
     <p><?php echo $page->text()->html()?></p>
   </div>
 </main>
-<?php snippet('script-includes')?>
+<?php snippet('base/script-includes')?>
 </body>
-<?php snippet('footer') ?>
+<?php snippet('base/page-footer') ?>
 </html>
